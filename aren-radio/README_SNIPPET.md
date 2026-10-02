@@ -1,11 +1,11 @@
-## 🎧 DXO // Featured Track
+## 🎧 Aren // Featured Track
 
 <p align="center">
   <a href="https://YOUR-VERCEL-PROJECT.vercel.app/">
     <img
       src="https://YOUR-VERCEL-PROJECT.vercel.app/api/card?track=more-than-you-know"
       width="100%"
-      alt="DXO Radio — More Than You Know by Axwell /\\ Ingrosso"
+      alt="Aren Radio — More Than You Know by Axwell /\\ Ingrosso"
     />
   </a>
 </p>

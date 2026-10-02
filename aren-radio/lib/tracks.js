@@ -6,7 +6,7 @@ module.exports = {
     artist: "Axwell /\\ Ingrosso",
     spotifyUrl: "https://open.spotify.com/track/61ZUgMJI771PlKXdT9OXwF",
     duration: "03:23",
-    eyebrow: "DXO // FEATURED TRACK",
+    eyebrow: "AREN // FEATURED TRACK",
     accentA: "#22D3EE",
     accentB: "#6366F1",
     warm: "#F59E0B"

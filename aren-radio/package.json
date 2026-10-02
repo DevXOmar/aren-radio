@@ -1,8 +1,8 @@
 {
-  "name": "dxo-radio",
+  "name": "aren-radio",
   "version": "1.0.0",
   "private": true,
-  "description": "Animated GitHub README music card for DevXOmar",
+  "description": "Animated GitHub README music card for Aren Radio",
   "engines": {
     "node": ">=18"
   }

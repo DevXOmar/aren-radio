@@ -1,4 +1,4 @@
-# DXO Radio — setup
+# Aren Radio — setup
 
 A no-secret, animated GitHub README music card for:
 
@@ -14,7 +14,7 @@ https://open.spotify.com/track/61ZUgMJI771PlKXdT9OXwF
 - Embeds the artwork into the SVG as base64, so the final card is self-contained.
 - Animates the cyan/indigo border, equalizer bars, scan light, signal dot, and progress marker.
 - Does **not** autoplay copyrighted audio inside GitHub; GitHub READMEs cannot do that.
-- Clicking the card can open your DXO Radio landing page, which contains the official Spotify embed player.
+- Clicking the card can open your Aren Radio landing page, which contains the official Spotify embed player.
 
 ## Deploy on Vercel
 
@@ -47,14 +47,14 @@ No Spotify credentials are required for this fixed featured-track version.
 Replace `YOUR-VERCEL-PROJECT` with the actual Vercel project domain.
 
 ```html
-## 🎧 DXO // Featured Track
+## 🎧 Aren // Featured Track
 
 <p align="center">
   <a href="https://YOUR-VERCEL-PROJECT.vercel.app/">
     <img
       src="https://YOUR-VERCEL-PROJECT.vercel.app/api/card?track=more-than-you-know"
       width="100%"
-      alt="DXO Radio — More Than You Know by Axwell /\\ Ingrosso"
+      alt="Aren Radio — More Than You Know by Axwell /\\ Ingrosso"
     />
   </a>
 </p>
@@ -84,7 +84,7 @@ Open `lib/tracks.js` and add:
   artist: "Artist Name",
   spotifyUrl: "https://open.spotify.com/track/...",
   duration: "03:45",
-  eyebrow: "DXO // FEATURED TRACK",
+  eyebrow: "AREN // FEATURED TRACK",
   accentA: "#22D3EE",
   accentB: "#6366F1",
   warm: "#F59E0B"
@@ -139,8 +139,8 @@ So the experience is:
 
 ```text
 GitHub profile
-   ↓ click animated DXO Radio card
-DXO Radio Vercel page
+   ↓ click animated Aren Radio card
+Aren Radio Vercel page
    ↓
 official Spotify embedded player
 ```

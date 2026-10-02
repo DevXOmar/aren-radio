@@ -32,7 +32,7 @@ function fallbackCover() {
     <circle cx="320" cy="320" r="176" fill="none" stroke="#22D3EE" stroke-opacity=".25" stroke-width="2"/>
     <circle cx="320" cy="320" r="112" fill="none" stroke="#6366F1" stroke-opacity=".35" stroke-width="2"/>
     <circle cx="320" cy="320" r="25" fill="#22D3EE"/>
-    <text x="320" y="546" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#E6FBFF">DXO RADIO</text>
+    <text x="320" y="546" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#E6FBFF">AREN RADIO</text>
   </svg>`;
   return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
 }
@@ -41,14 +41,14 @@ async function getAlbumArtDataUrl(spotifyUrl) {
   try {
     const oembedUrl = `https://open.spotify.com/oembed?url=${encodeURIComponent(spotifyUrl)}`;
     const metaRes = await fetch(oembedUrl, {
-      headers: { "User-Agent": "DXO-Radio/1.0" }
+      headers: { "User-Agent": "Aren-Radio/1.0" }
     });
     if (!metaRes.ok) return fallbackCover();
     const meta = await metaRes.json();
     if (!meta.thumbnail_url) return fallbackCover();
 
     const imgRes = await fetch(meta.thumbnail_url, {
-      headers: { "User-Agent": "DXO-Radio/1.0" }
+      headers: { "User-Agent": "Aren-Radio/1.0" }
     });
     if (!imgRes.ok) return fallbackCover();
 
@@ -96,7 +96,7 @@ function makeSvg(track, coverDataUrl, accentA, accentB) {
   xmlns:xlink="http://www.w3.org/1999/xlink"
   role="img" aria-labelledby="title desc">
   <title id="title">${title} — ${artist}</title>
-  <desc id="desc">DXO Radio featured-track card with animated equalizer visualization. Click the card in the GitHub README to open the song on Spotify.</desc>
+  <desc id="desc">Aren Radio featured-track card with animated equalizer visualization. Click the card in the GitHub README to open the song on Spotify.</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="900" y2="240">
@@ -205,11 +205,9 @@ function makeSvg(track, coverDataUrl, accentA, accentB) {
 
       <text x="251" y="158" fill="#64748B" font-size="11" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing="1.4">SELECTED BY DEVXOMAR  //  ${duration}</text>
 
-      <rect x="251" y="181" width="128" height="30" rx="15" fill="#071B2E" stroke="${accentA}" stroke-opacity=".35"/>
+      <rect x="251" y="181" width="180" height="30" rx="15" fill="#071B2E" stroke="${accentA}" stroke-opacity=".35"/>
       <polygon points="269,191 269,201 278,196" fill="${accentA}"/>
       <text x="287" y="201" fill="#DFFAFF" font-size="11" font-weight="700" letter-spacing=".8">OPEN IN SPOTIFY</text>
-
-      <text x="408" y="92" fill="#8AA6BF" font-size="10" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing="1.7">VISUALIZER</text>
     </g>
 
     <!-- equalizer -->
@@ -221,7 +219,7 @@ function makeSvg(track, coverDataUrl, accentA, accentB) {
 
     <!-- signature -->
     <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-      <text x="846" y="203" text-anchor="end" fill="#52677D" font-size="9.5" letter-spacing="1.5">DXO RADIO / 2026</text>
+      <text x="846" y="203" text-anchor="end" fill="#52677D" font-size="9.5" letter-spacing="1.5">AREN RADIO / 2026</text>
     </g>
 
     <rect x=".75" y=".75" width="898.5" height="238.5" rx="23.25" fill="none" stroke="#34556E" stroke-opacity=".42"/>
