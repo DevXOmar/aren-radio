@@ -1,0 +1,9 @@
+{
+  "name": "dxo-radio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Animated GitHub README music card for DevXOmar",
+  "engines": {
+    "node": ">=18"
+  }
+}

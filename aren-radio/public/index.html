@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#020617" />
+  <title>DXO Radio — More Than You Know</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 76% 18%, rgba(34,211,238,.12), transparent 28%),
+        radial-gradient(circle at 88% 80%, rgba(99,102,241,.14), transparent 34%),
+        #020617;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      color: #e2f7ff;
+    }
+    main { width: min(1000px, 94vw); padding: 42px 0; }
+    .label {
+      margin: 0 0 14px;
+      color: #67e8f9;
+      letter-spacing: .18em;
+      font: 700 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .card {
+      display:block;
+      border-radius:24px;
+      overflow:hidden;
+    }
+    .card img {
+      display:block;
+      width:100%;
+    }
+    .player {
+      margin-top:18px;
+      padding:14px;
+      border:1px solid rgba(34,211,238,.14);
+      border-radius:20px;
+      background:rgba(7,21,47,.55);
+      backdrop-filter: blur(12px);
+    }
+    iframe { display:block; width:100%; border:0; border-radius:12px; }
+    .row {
+      margin-top: 16px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .pill {
+      border:1px solid rgba(34,211,238,.25);
+      background:rgba(7,21,47,.72);
+      color:#dffaff;
+      border-radius:999px;
+      padding:10px 16px;
+      text-decoration:none;
+      font:700 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    }
+    .hint { color:#7890a8; font-size:13px; line-height:1.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="label">DXO RADIO // FEATURED TRACK</p>
+
+    <a class="card" href="https://open.spotify.com/track/61ZUgMJI771PlKXdT9OXwF">
+      <img src="/api/card?track=more-than-you-know" alt="DXO Radio — More Than You Know by Axwell / Ingrosso" />
+    </a>
+
+    <section class="player">
+      <iframe
+        src="https://open.spotify.com/embed/track/61ZUgMJI771PlKXdT9OXwF?utm_source=generator&theme=0"
+        height="152"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        title="Spotify player — More Than You Know by Axwell / Ingrosso">
+      </iframe>
+    </section>
+
+    <div class="row">
+      <a class="pill" href="https://open.spotify.com/track/61ZUgMJI771PlKXdT9OXwF">Open in Spotify ↗</a>
+      <span class="hint">GitHub itself shows the animated card. This page is the optional DXO Radio landing page with the real Spotify player.</span>
+    </div>
+  </main>
+</body>
+</html>
