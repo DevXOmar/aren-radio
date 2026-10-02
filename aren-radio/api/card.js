@@ -203,7 +203,7 @@ function makeSvg(track, coverDataUrl, accentA, accentB) {
       <text x="250" y="92" fill="#F8FAFC" font-size="31" font-weight="760" letter-spacing="-0.8">${title}</text>
       <text x="251" y="120" fill="#AFC4D9" font-size="17" font-weight="530">${artist}</text>
 
-      <text x="251" y="158" fill="#64748B" font-size="11" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing="1.4">SELECTED BY DEVXOMAR  //  ${duration}</text>
+      <text x="251" y="158" fill="#64748B" font-size="11" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing="1.4"></text>
 
       <rect x="251" y="181" width="180" height="30" rx="15" fill="#071B2E" stroke="${accentA}" stroke-opacity=".35"/>
       <polygon points="269,191 269,201 278,196" fill="${accentA}"/>
